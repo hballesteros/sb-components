@@ -1,5 +1,4 @@
 import './mylabel.css';
-
 export interface MyLabelProps {
     /**
      * How large should the label be?
@@ -24,25 +23,6 @@ export interface MyLabelProps {
     /**
      * Optional all caps
      */
-    allCaps?: boolean; 
-}  
-
-export const MyLabel = ({ 
-    size    = 'normal',
-    label   = 'My Label',
-    color   = 'primary',
-    fontColor,
-    backgroundColor = 'transparent',
-    allCaps = false,
-    ...props
-}: MyLabelProps ) => {
-  return (
-    <span 
-        className={`label ${ size } text-${ color } ${ allCaps ? 'all-caps' : '' }`}
-        style={{ color: fontColor, backgroundColor: backgroundColor }}
-        { ...props}
-    >
-        { label }
-    </span>
-  );
-};
+    allCaps?: boolean;
+}
+export declare const MyLabel: ({ size, label, color, fontColor, backgroundColor, allCaps, ...props }: MyLabelProps) => import("react/jsx-runtime").JSX.Element;

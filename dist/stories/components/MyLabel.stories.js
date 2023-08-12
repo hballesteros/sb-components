@@ -1,11 +1,10 @@
-import { Meta, StoryObj } from '@storybook/react';
-
-import { MyLabel, MyLabelProps } from '../../components/MyLabel';
-
-
-const meta = {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CustomBackgroundColor = exports.CustomFontColor = exports.Tertiary = exports.Secondary = exports.AllCaps = exports.Basic = void 0;
+var MyLabel_1 = require("../../components/MyLabel");
+var meta = {
     title: 'UI/MyLabel',
-    component: MyLabel,
+    component: MyLabel_1.MyLabel,
     argTypes: {
         size: {
             control: {
@@ -26,48 +25,39 @@ const meta = {
         layout: 'centered',
     },
     tags: ['autodocs'],
-
-} satisfies Meta<typeof MyLabel>;
-
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Basic: Story = {
+};
+exports.default = meta;
+exports.Basic = {
     args: {
         size: 'normal',
         allCaps: false,
     },
 };
-
-export const AllCaps: Story = {
+exports.AllCaps = {
     args: {
         size: 'normal',
         allCaps: true,
-    },   
+    },
 };
-
-export const Secondary: Story = {
+exports.Secondary = {
     args: {
         size: 'normal',
         color: 'secondary',
     },
 };
-
-export const Tertiary: Story = {
+exports.Tertiary = {
     args: {
         size: 'normal',
         color: 'tertiary',
     },
 };
-
-export const CustomFontColor: Story = {
+exports.CustomFontColor = {
     args: {
         size: 'h1',
         fontColor: '#5517ac',
     },
 };
-
-export const CustomBackgroundColor: Story = {
+exports.CustomBackgroundColor = {
     args: {
         size: 'h1',
         fontColor: '#eeeeee',
