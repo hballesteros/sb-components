@@ -30,3 +30,4 @@ var MyLabel = function (_a) {
     return ((0, jsx_runtime_1.jsx)("span", __assign({ className: "label ".concat(size, " text-").concat(color, " ").concat(allCaps ? 'all-caps' : ''), style: { color: fontColor, backgroundColor: backgroundColor } }, props, { children: label })));
 };
 exports.MyLabel = MyLabel;
+exports.default = exports.MyLabel;

@@ -26,3 +26,4 @@ export interface MyLabelProps {
     allCaps?: boolean;
 }
 export declare const MyLabel: ({ size, label, color, fontColor, backgroundColor, allCaps, ...props }: MyLabelProps) => import("react/jsx-runtime").JSX.Element;
+export default MyLabel;

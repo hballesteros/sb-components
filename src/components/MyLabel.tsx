@@ -1,3 +1,4 @@
+import exp from 'constants';
 import './mylabel.css';
 
 export interface MyLabelProps {
@@ -46,3 +47,5 @@ export const MyLabel = ({
     </span>
   );
 };
+
+export default MyLabel;
